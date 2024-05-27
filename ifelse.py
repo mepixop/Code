@@ -1,3 +1,7 @@
+from miniLib import printTitel
+
+#Aufgabe 1
+printTitel()
 print("Geben Sie eine Zahl ein")
 zahl = int(input())
 
@@ -7,6 +11,8 @@ elif zahl<0:
   print("die Zahl" + str(zahl) + "ist negativ")
 
 
+#Aufgabe 2
+printTitel()
 print("wie alt sind sie")
 zahlJahre = int(input())
 
@@ -15,6 +21,8 @@ if zahlJahre>=18:
 elif zahlJahre<18:
   print("du bist minderjährig")
 
+#Aufgabe 3
+printTitel()
 print("geb mir eine note")
 zahlNote = int(input())
 
@@ -31,6 +39,8 @@ elif zahlNote==5:
 else:
    print("Ungültig")
 
+#Aufgabe 4
+printTitel()
 print("ich brauche noch eine Zahl")
 zahlPrüf = int(input())
 if zahlPrüf > 0:
@@ -44,6 +54,8 @@ elif zahlPrüf == 0:
 else:
   print("negativ")
 
+#Aufgabe 5
+printTitel()
 print("geb mir noch eine zahl")
 zahlEins = float(input())
 print("und noch eine!")

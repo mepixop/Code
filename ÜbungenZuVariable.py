@@ -1,11 +1,6 @@
+from miniLib import printTitel
+
 ##Aufgaben zum arbeiten mit Variablen
-
-aufgaben_Nummer=0
-
-def printTitel():
-  global aufgaben_Nummer
-  aufgaben_Nummer +=1
-  print( "\n", "Aufgabe {}".format(aufgaben_Nummer))
 
 
 #Aufgabe 1 - Variablenzuweisung
