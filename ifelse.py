@@ -61,7 +61,7 @@ zahlEins = float(input())
 print("und noch eine!")
 zahlZwei = float(input())
 
-if (zahlEins>0) & (zahlZwei>0):
+if (zahlEins>0) and (zahlZwei>0):
    print("wir sind beide positiv!")
-elif(zahlEins<0) // (zahlZwei<0):
+elif(zahlEins<0) or (zahlZwei<0):
    print("einer von uns ist negativ")
