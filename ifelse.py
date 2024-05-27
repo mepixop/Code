@@ -2,9 +2,9 @@ print("Geben Sie eine Zahl ein")
 zahl = int(input())
 
 if zahl>=0:
-  print("die Zahl ist positiv")
+  print("die Zahl"  + str(zahl) + "ist positiv")
 elif zahl<0:
-  print("die Zahl ist negativ")
+  print("die Zahl" + str(zahl) + "ist negativ")
 
 
 print("wie alt sind sie")
@@ -16,17 +16,17 @@ elif zahlJahre<18:
   print("du bist minderjährig")
 
 print("geb mir eine note")
-zahlNote = input()
+zahlNote = int(input())
 
-if zahlJahre==1:
+if zahlNote==1:
     print("Sehr gut")
-elif zahlJahre==2:
+elif zahlNote==2:
     print("gut")
-elif zahlJahre==3:
+elif zahlNote==3:
     print("Befriedigend")
-elif zahlJahre==4:
+elif zahlNote==4:
     print("Ausreichend")
-elif zahlJahre==5:
+elif zahlNote==5:
     print("Nicht aussreichend")
 else:
    print("Ungültig")
@@ -45,9 +45,9 @@ else:
   print("negativ")
 
 print("geb mir noch eine zahl")
-zahlEins = int(input())
+zahlEins = float(input())
 print("und noch eine!")
-zahlZwei = int(input())
+zahlZwei = float(input())
 
 if (zahlEins>0) & (zahlZwei>0):
    print("wir sind beide positiv!")
