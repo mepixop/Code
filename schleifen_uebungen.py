@@ -31,9 +31,12 @@ printTitel('Alle geraden Zahlen in einem Bereich')
 start = int(input("Bitte geben Sie start ein"))
 end = int(input("Bitte geben sie ein ende ein"))
 
-for i in range (start,end):
+for i in range (start,end+1):
+  print(start)
+  if i % 2 != 0:
+    continue
   print(i)
-print(str(end))
+
 
 #Aufgabe 4
 printTitel('Zählen von Vokalen in einem String')
@@ -41,6 +44,13 @@ vokalCount= 0
 vokale="aeiouAEIOU"
 
 letters = input("bitte geben sie eine beliebige buchstabenfolge ein")
+
+print("is there a vokal")
+#char= zeichen in eingabe
+for char in letters:
+  if char in vokale:
+    print("true")
+    break
 
 for char in letters:
   if char in vokale:
@@ -61,7 +71,7 @@ while zahl <= 0:
     print("das ist keine ganze zahl? bitte nochmal angeben")
 
 #Aufgabe 6
-printTitel('Multiplikationstabelle')
+printTitel('einfache Multiplikationstabelle')
 nM = int(input("bitte Zahl eingeben"))
 
 for i in range(1, nM + 1):
@@ -70,4 +80,6 @@ for i in range(1, nM + 1):
     print() 
 
 #Aufgabe 7
+
+
 #Aufgabe 8
