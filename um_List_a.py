@@ -71,11 +71,31 @@ printTitel(2, "Zusammenführen von Listen")
 listeEins = [1,2,3,4,5]
 listeZwei = ["a","b","c","d","e"]
 listeBoth = []
-j = 0
-k = 0
 
-while j < len(listeEins):
-  listeBoth[j] = listeEins[j]
-  j = j+1
+listeBoth= listeEins + listeZwei
 
-print(len(listeBoth))
+print(listeBoth)
+
+#Aufgabe 9
+printTitel(2, "Listenverschachtelungsmatrix")
+
+allMightList = []
+allMightList.append([1,2,3])
+allMightList.append([4,5,6])
+allMightList.append([7,8,9])
+row=3
+spalte = 3
+
+for i in range(0,3):
+  print(allMightList[i])
+
+for row in allMightList:
+  for ele in row:
+    print(ele, end=" ") #end= endet mit leerzeichen anstelle von Zeile
+  print()
+
+print(allMightList[1][2])
+
+#since Pyton 3 * goes threw all elements and asign them to variables wich then are given back
+for j in allMightList:
+  print(*j)
