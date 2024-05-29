@@ -63,7 +63,7 @@ zahl = 0
 
 while zahl <= 0:
   try: 
-    zahl = int(input("bitte gebe eine possitive ganz Zahl an!"))
+    zahl = int(input("bitte gebe eine possitive ganz Zahl an."))
     if zahl < 0:
       print("keine Positive zahl. Versuchs nochmal")
 

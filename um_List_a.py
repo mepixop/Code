@@ -14,18 +14,17 @@ numbers = [1,13,4,35,16,7,34,8,22,1000]
 
 for count in range(0,5,+1):
   print(f"Erste fünf Zahlen: {numbers[count]}")
-
 for count in range(-1,-4,-1):
   print(f"Lezte drei Zahlen: {numbers[count]} ")
 
 #Aufgabe 3
 printTitel(2, "Hinzufügen und Entfernen")
 zahlen= []
+anzahl_zahlen= 10
 
-i= 0
-while i < 5:
-  zahlen.append(i+1)
-  i = i+1
+for ele in range(1,anzahl_zahlen+1):
+  zahlen.append(ele)
+
 print(zahlen)
 
 zahlen.remove(3)
@@ -46,25 +45,28 @@ print(randNum)
 
 #Aufgabe 6
 printTitel(2, "Finden von Elementen")
-names = ["Sara", "Rahul", "Me", "You"]
+names = ["Sara", "Rahul", "Me", "Me"]
+name_to_find = "Sara"
 
-if names.count("Sara") > 0 :
+if names.count(name_to_find) > 0 :
   print("true")
 else:
   print("false")
+
+#kurzschreibweise in pyton mit "in"
+if name_to_find in names:
+  print("ist enthalten!!!!!")
 
 #Aufgabe 7
 printTitel(2, "Durchschnitt berechnen")
 dNum = [1,2,3,4,5,6,7,8,9,0]
 summe= 0
-durchschnitt= 0
+average= 0
 
-for elem in dNum:
-  summe = summe+dNum[elem]
-durchschnitt = summe/len(dNum)
+average = sum(dNum) / len(dNum)
 
 print(summe)
-print(durchschnitt)
+print(average)
 
 #Aufgabe 8
 printTitel(2, "Zusammenführen von Listen")
@@ -73,6 +75,10 @@ listeZwei = ["a","b","c","d","e"]
 listeBoth = []
 
 listeBoth= listeEins + listeZwei
+
+#Vorsicht hier wird liste 2 als element hinzugefügt! nicht nur inhalte
+listeEins.append(listeZwei)
+print(listeEins)
 
 print(listeBoth)
 
@@ -83,19 +89,20 @@ allMightList = []
 allMightList.append([1,2,3])
 allMightList.append([4,5,6])
 allMightList.append([7,8,9])
-row=3
-spalte = 3
+
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
 for i in range(0,3):
   print(allMightList[i])
 
 for row in allMightList:
-  for ele in row:
-    print(ele, end=" ") #end= endet mit leerzeichen anstelle von Zeile
+  for col in row:
+    print(col, end=" ") #end= endet mit leerzeichen anstelle von Zeile
   print()
-
-print(allMightList[1][2])
 
 #since Pyton 3 * goes threw all elements and asign them to variables wich then are given back
 for j in allMightList:
   print(*j)
+
+#element 1/2
+print(allMightList[1][2])
