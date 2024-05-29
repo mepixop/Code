@@ -1,7 +1,7 @@
 from miniLib import printTitel
 
 #Aufgabe1
-printTitel('Summe der ersten n natürlichen Zahlen')
+printTitel(2, 'Summe der ersten n natürlichen Zahlen')
 nS = int(input("bitte gebe eine possitive ganz Zahl an!"))
 summe = 0
 
@@ -14,7 +14,7 @@ else:
   print("Summe:", str(summe))
 
 #Aufgabe2
-printTitel('Fakulät einer Zahl berechnen')
+printTitel(2, 'Fakulät einer Zahl berechnen')
 nF = int(input("bitte gebe eine possitive ganz Zahl an!"))
 fakultaet = 1
 
@@ -27,7 +27,7 @@ else:
 
 
 #Aufgabe 3
-printTitel('Alle geraden Zahlen in einem Bereich')
+printTitel(2, 'Alle geraden Zahlen in einem Bereich')
 start = int(input("Bitte geben Sie start ein"))
 end = int(input("Bitte geben sie ein ende ein"))
 
@@ -39,7 +39,7 @@ for i in range (start,end+1):
 
 
 #Aufgabe 4
-printTitel('Zählen von Vokalen in einem String')
+printTitel(2, 'Zählen von Vokalen in einem String')
 vokalCount= 0
 vokale="aeiouAEIOU"
 
@@ -58,7 +58,7 @@ for char in letters:
 print("Anzahl Vokale ist:", vokalCount)
 
 #Aufgabe 5
-printTitel('Benutzer-Eingabe validieren (mit while-Schleife)')
+printTitel(2, 'Benutzer-Eingabe validieren (mit while-Schleife)')
 zahl = 0
 
 while zahl <= 0:
@@ -71,7 +71,7 @@ while zahl <= 0:
     print("das ist keine ganze zahl? bitte nochmal angeben")
 
 #Aufgabe 6
-printTitel('einfache Multiplikationstabelle')
+printTitel(2, 'einfache Multiplikationstabelle')
 nM = int(input("bitte Zahl eingeben"))
 
 for i in range(1, nM + 1):
