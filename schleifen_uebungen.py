@@ -79,7 +79,3 @@ for i in range(1, nM + 1):
         print(f"{i * j:4}", end="")
     print() 
 
-#Aufgabe 7
-
-
-#Aufgabe 8

@@ -1,11 +1,13 @@
 #count excercise numbers and print Title with the Number and optionaly description
 aufgaben_Nummer=0
-def printTitel(type=0,name=''):
+def printTitel(typeselection=0,name=''):
   global aufgaben_Nummer
   aufgaben_Nummer +=1
-  types=(['','Übung','Aufgabe'])
+  types=['','Übung','Aufgabe']
 
-  print( "\n", "{}".format(aufgaben_Nummer), name)
+  print("\n--------------------------\n")
+  print("{} {} {}".format(types[typeselection],aufgaben_Nummer,name))
+  print("\n--------------------------\n")
 
 #prints Multiplikationtable nM-times
 def printPrettyMultipliTable(number):
