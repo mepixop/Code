@@ -50,10 +50,14 @@ tiere.append("Hund")
 tiere.append("Maus")
 tiere.append("Biber")
 tiere.append("Elefant")
+tiere.append("Biber")
 
 # print die Anzahl der Tiere in der Liste
 print("Anzahl der Tiere in Liste")
 print(len(tiere))
+
+# Anzahl der "biber" in Liste zurückgegeben
+print(tiere.count("Biber"))
 
 # print das letzte Element in Liste (-1 ist hier sehr wichtig, da lenge nicht=letzter Index ist)
 print("Letztes Element in Tier-liste")
@@ -70,3 +74,32 @@ print(len(tiere))
 # pop zusatzeigenschaft: gibt während entfernung den Inhalt des Elements zurück.
 tiere.pop(2)
 print(len(tiere))
+
+# list slicing
+printTitel(1,"Zugriff mit Slicing")
+print("letzte element in liste")
+print(zahlen[len(zahlen)-1])
+print(zahlen[-1])
+print("vorletzte Element")
+print(zahlen[-2])
+print("mehrere Element")
+sprachen = ["de","en","in",]
+#startwert inclusive, endwert exclusive
+print(sprachen[2:6]) #
+print(sprachen[:6]) #ohne start begin an index 0
+print(sprachen[2:]) #ohne end von start bis letzte element
+print(sprachen[:]) #gesamte liste
+
+#sliving bei strings
+my_string = "Hallöchen"
+print(my_string[:5])
+
+# leeren der liste
+tiere.clear
+
+# sortieren von Listen
+printTitel(1,"Sortieren von Listen")
+zahlen=[14,2,154,2,8,77,1]
+print("Unsortiert: ", zahlen)
+zahlen.sort()
+print("Sortiert:", zahlen)

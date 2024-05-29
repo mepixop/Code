@@ -3,11 +3,11 @@ aufgaben_Nummer=0
 def printTitel(typeselection=0,name=''):
   global aufgaben_Nummer
   aufgaben_Nummer +=1
-  types=['','Übung','Aufgabe']
+  types=['','Beispiel','Aufgabe']
 
   print("\n--------------------------\n")
   print("{} {} {}".format(types[typeselection],aufgaben_Nummer,name))
-  print("\n--------------------------\n")
+  print("\n--------------------------")
 
 #prints Multiplikationtable nM-times
 def printPrettyMultipliTable(number):

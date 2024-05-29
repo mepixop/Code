@@ -1,17 +1,3 @@
-benutzer =""
-benutzer_Alter = ''
-msgAskForName = "Bitte gebe deinen Namen an."
-msgAskForAge = "Bitte gebe dein Alter an."
-msgErrorAge= "gebe nur gerade possitive Zahlen für deinen Geburtstag an."
-#mit int casting (umwandlung in einen besitmmten datentyp )
+from miniLib import printTitel
 
-
-print(msgAskForName)
-benutzer = input()
-print(msgAskForAge)
-benutzer_Alter = input()
-
-while not benutzer_Alter.isdigit:
-  benutzer_Alter = input()
-
-print("Hallo,", benutzer, "du bist", benutzer_Alter, "Jahre alt!")
+printTitel(1,"test mit 1")

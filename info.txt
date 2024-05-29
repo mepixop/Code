@@ -1,0 +1,8 @@
+buch= Übungen aus dem Buch Python für einsteiger
+um = Übungen aus der GFN Umschulung
+s = Eigen gestellte Aufgaben zur Selbstvertiefung/Übung
+
+a = Aufgaben
+n = Notizen
+
+test.py verwende ich für alles mögliche mal
