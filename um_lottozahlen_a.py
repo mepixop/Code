@@ -18,7 +18,7 @@ while not playMode:
     
     if selectedMode == "ja":
       playMode = True
-    elif selectedMode =="Exit":
+    elif selectedMode =="Exit" or selectedMode == "nein":
       break
 
     while bingo < 6 and playMode:
@@ -26,17 +26,17 @@ while not playMode:
       lotto_Numbers= random.sample(range(first_Number, last_Number+1),amount_Numbers)
 
       #Get the choosen Numbers
-      bet_Numbers = um_lottoservice_a.getbetNumbers(bet_Numbers,amount_Numbers,first_Number,last_Number)
+      bet_Numbers = um_lottoservice_a.get_user_numbers(bet_Numbers,amount_Numbers,first_Number,last_Number)
       
       #Calculate the amount of times, the same numbers is in the lists
-      bingo = um_lottoservice_a.calculateBingo(bet_Numbers,lotto_Numbers)
-      
-      #Prints the solution to all
-      um_lottoservice_a.printSolution(bet_Numbers,lotto_Numbers,bingo)
-      
+      bingo = um_lottoservice_a.calculate_bingo(bet_Numbers,lotto_Numbers)
+           
       #counts the attempts
       draw_number += 1
 
+      #Prints the solution to all
+      um_lottoservice_a.print_lotto_solution(bet_Numbers,lotto_Numbers,bingo)
+ 
       #reset the game
       playMode = False
       showMenue = True
